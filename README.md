@@ -1,6 +1,6 @@
 # ndx-dynamic-routing-metadata Extension for NWB
 
-Metadata for dynamic routing project at Allen Institute
+Type for storing metadata for dynamic routing project at Allen Institute
 
 ## Installation
 
