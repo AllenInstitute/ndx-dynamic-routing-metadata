@@ -1,0 +1,14 @@
+groups:
+- neurodata_type_def: DynamicRoutingMetadataExtension
+  neurodata_type_inc: LabMetaData
+  doc: Type for storing metadata for dynamic routing project at Allen Institute
+  attributes:
+  - name: is_ephys
+    dtype: bool
+    doc: whether session has ephys recording
+  - name: is_sync
+    dtype: bool
+    doc: whether session has sync
+  - name: is_task
+    dtype: bool
+    doc: whether session has dynamic routing task
