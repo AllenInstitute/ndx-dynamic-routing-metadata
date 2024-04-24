@@ -40,20 +40,30 @@ def main():
 
     DynamicRoutingMetadataExtension.add_attribute(
         name="is_ephys",
-        doc='whether session has ephys recording',
+        doc='session has data from extracellular ephys recordings with Neuropixels probes',
         dtype='bool'
     )
 
     DynamicRoutingMetadataExtension.add_attribute(
         name="is_sync",
-        doc='whether session has sync',
+        doc='session has precise timing information for all streams, synchronized via a global DAQ sampling at 100 kS/s',
         dtype='bool'
     )
 
     DynamicRoutingMetadataExtension.add_attribute(
         name="is_task",
-        doc='whether session has dynamic routing task',
+        doc='session has trial information for a context switching behavior task',
         dtype='bool'
+    )
+    DynamicRoutingMetadataExtension.add_attribute(
+        name="experiment_day",
+        doc='day number, starting from 1, across all ephys or opto sessions for the subject; subjects have at most one experiment per day; `None` for behavior-only sessions',
+        dtype='int'
+    )
+    DynamicRoutingMetadataExtension.add_attribute(
+        name="behavior_day",
+        doc='day number, starting from 1, across all behavior sessions for the subject; subjects have at most one behavior session per day; `None` if the session has no behavior (`is_task`==False)',
+        dtype='int'
     )
 
     # TODO: add more attributes/groups as needed
