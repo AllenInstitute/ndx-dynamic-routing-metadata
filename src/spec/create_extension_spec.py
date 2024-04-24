@@ -57,13 +57,15 @@ def main():
     )
     DynamicRoutingMetadataExtension.add_attribute(
         name="experiment_day",
-        doc='day number, starting from 1, across all ephys or opto sessions for the subject; subjects have at most one experiment per day; `None` for behavior-only sessions',
-        dtype='int'
+        doc='day number of the experiment across all ephys or opto experiments for the subject; starts at 1; subjects have at most one experiment per day; `None` for behavior-only sessions',
+        dtype='int',
+        required=False,
     )
     DynamicRoutingMetadataExtension.add_attribute(
         name="behavior_day",
-        doc='day number, starting from 1, across all behavior sessions for the subject; subjects have at most one behavior session per day; `None` if the session has no behavior (`is_task`==False)',
-        dtype='int'
+        doc='day number of the session across all behavior sessions for the subject; starts at 1; subjects have at most one behavior session per day; `None` if the session has no behavior (`is_task`==False)',
+        dtype='int',
+        required=False,
     )
 
     # TODO: add more attributes/groups as needed
