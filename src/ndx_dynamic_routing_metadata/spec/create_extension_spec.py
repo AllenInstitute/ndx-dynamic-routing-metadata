@@ -72,7 +72,7 @@ def main():
     new_data_types = [DynamicRoutingMetadataExtension]
 
     # export the spec to yaml files in the spec folder
-    output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "spec"))
+    output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
     export_spec(ns_builder, new_data_types, output_dir)
 
 

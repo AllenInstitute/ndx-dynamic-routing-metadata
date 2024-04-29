@@ -1,0 +1,1 @@
+--8<-- "https://raw.githubusercontent.com/AllenInstitute/ndx-dynamic-routing-metadata/main/CHANGELOG.md"
