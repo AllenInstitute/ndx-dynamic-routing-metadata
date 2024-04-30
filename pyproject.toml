@@ -48,7 +48,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = [
-    "src/pynwb",
+    "src",
     "spec/ndx-dynamic-routing-metadata.extensions.yaml",
     "spec/ndx-dynamic-routing-metadata.namespace.yaml",
 ]

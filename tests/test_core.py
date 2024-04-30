@@ -1,5 +1,3 @@
-import ndx_dynamic_routing_metadata
-
 import os
 import unittest
 from datetime import datetime
