@@ -17,7 +17,7 @@ dependencies = [
     "pynwb>=2.6.0",
     "hdmf>=3.13.0",
 ]
-version = "0.1.2"
+version = "0.1.3"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",
@@ -48,9 +48,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = [
-    "src",
-    "src/ndx_dynamic_routing_metadata/spec/ndx-dynamic-routing-metadata.extensions.yaml",
-    "src/ndx_dynamic_routing_metadata/spec/ndx-dynamic-routing-metadata.namespace.yaml",
+    "src/pynwb",
+    "spec/ndx-dynamic-routing-metadata.extensions.yaml",
+    "spec/ndx-dynamic-routing-metadata.namespace.yaml",
 ]
 
 [tool.setuptools.package-data]

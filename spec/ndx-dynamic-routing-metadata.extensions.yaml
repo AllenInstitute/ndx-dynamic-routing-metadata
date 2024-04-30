@@ -5,10 +5,23 @@ groups:
   attributes:
   - name: is_ephys
     dtype: bool
-    doc: whether session has ephys recording
+    doc: session has data from extracellular ephys recordings with Neuropixels probes
   - name: is_sync
     dtype: bool
-    doc: whether session has sync
+    doc: session has precise timing information for all streams, synchronized via
+      a global DAQ sampling at 100 kS/s
   - name: is_task
     dtype: bool
-    doc: whether session has dynamic routing task
+    doc: session has trial information for a context switching behavior task
+  - name: experiment_day
+    dtype: int
+    doc: day number of the experiment across all ephys or opto experiments for the
+      subject; starts at 1; subjects have at most one experiment per day; `None` for
+      behavior-only sessions
+    required: false
+  - name: behavior_day
+    dtype: int
+    doc: day number of the session across all behavior sessions for the subject; starts
+      at 1; subjects have at most one behavior session per day; `None` if the session
+      has no behavior (`is_task`==False)
+    required: false
