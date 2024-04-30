@@ -12,7 +12,9 @@ except ImportError:
 __location_of_this_file = files(__name__)
 
 __spec_path = os.path.join(
-    __location_of_this_file.parent, "spec", "ndx-dynamic-routing-metadata.namespace.yaml"
+    __location_of_this_file.parent,
+    "spec",
+    "ndx-dynamic-routing-metadata.namespace.yaml",
 )
 
 
