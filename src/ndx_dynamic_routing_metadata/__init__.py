@@ -6,7 +6,7 @@ import doctest
 import importlib.metadata
 import logging
 
-from ndx_dynamic_routing_metadata.pynwb.ndx_dynamic_routing_metadata import *
+from ndx_dynamic_routing_metadata.pynwb import *
 from ndx_dynamic_routing_metadata.spec import *
 
 # import functions from submodules here:

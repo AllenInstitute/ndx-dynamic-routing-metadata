@@ -49,6 +49,9 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = [
     "src",
+    "src/ndx_dynamic_routing_metadata/spec/ndx-dynamic-routing-metadata.extensions.yaml",
+    "src/ndx_dynamic_routing_metadata/spec/ndx-dynamic-routing-metadata.namespace.yaml",
+
 ]
 
 [tool.setuptools.package-data]
