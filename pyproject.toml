@@ -49,13 +49,13 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = [
     "src",
-    "spec/ndx-dynamic-routing-metadata.extensions.yaml",
-    "spec/ndx-dynamic-routing-metadata.namespace.yaml",
 ]
 
 [tool.setuptools.package-data]
 ndx_dynamic_routing_metadata = [
     "py.typed",
+    "spec/ndx-dynamic-routing-metadata.extensions.yaml",
+    "spec/ndx-dynamic-routing-metadata.namespace.yaml",
 ]
 
 [tool.black]
