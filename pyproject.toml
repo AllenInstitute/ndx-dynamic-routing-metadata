@@ -54,8 +54,7 @@ where = [
 [tool.setuptools.package-data]
 ndx_dynamic_routing_metadata = [
     "py.typed",
-    "spec/ndx-dynamic-routing-metadata.extensions.yaml",
-    "spec/ndx-dynamic-routing-metadata.namespace.yaml",
+    "*.yaml",
 ]
 
 [tool.black]
